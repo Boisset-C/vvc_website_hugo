@@ -1,7 +1,4 @@
 {{ define "main" }}
-<div class="splash">
-    <div class="splash-content">
-        {{.Content}}
-    </div>
-</div>
+{{ partial "hero.html" . }}
+{{ .Content }}
 {{ end }}

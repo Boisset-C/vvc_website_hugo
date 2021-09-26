@@ -1,0 +1,23 @@
+<section class="hero text-white bg-cover bg-center" style="background: url('{{ .Site.Params.Hero.background_img }}') repeat">
+    <div class="hero-content container">
+        <!--
+            *** JUMBOTRON ***
+            _________________________________________________________
+        -->
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <h1 class="text-uppercase">{{ .Site.Params.Hero.header }}</h1>
+                    <h2 class="text-uppercase">{{ .Site.Params.Hero.subheader }}</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="text-center">
+                    <p class="lead h3 fw-normal lh-base mb-3">{{ .Site.Params.Hero.description }}</p>
+                    <p><a class="btn btn-outline-light" href="#packages">{{ .Site.Params.Hero.button_text }}</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- *** JUMBOTRON END ***-->
+    </div>
+</section>

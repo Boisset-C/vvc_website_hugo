@@ -2,3 +2,12 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'VVC Website'
 theme = 'vitals'
+
+[Params]
+
+    [Params.Hero]
+    header = '[Name of University]'
+    subheader = 'Veterans Live'
+    description = 'Setting the stage for success through conversation.'
+    button_text = 'Register now'
+    background_img = 'img/hero-background.jpg'
