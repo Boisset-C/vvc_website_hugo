@@ -3,6 +3,7 @@
 {{ range .Pages }}
 <div class="py-3 page text-center">
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <h5>{{ .Date.Year }}</h5>
 </div>
 {{ end }}
 {{ end }}
