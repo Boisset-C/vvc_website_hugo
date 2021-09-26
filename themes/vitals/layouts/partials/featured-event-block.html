@@ -1,0 +1,12 @@
+<section id="featured-event py-4">
+    <div class="container align-items-center text-center">
+        <h4 class="text-uppercase">Event Date/Time</h4>
+        <h2>{{ .Site.Params.FeaturedEvent.name }}</h2>
+        <p>{{ .Site.Params.FeaturedEvent.details }}</p>
+        <div class="speakers-list">
+            {{ range .Site.Params.FeaturedEvent.speakers }}
+            {{ partial "speaker-card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
