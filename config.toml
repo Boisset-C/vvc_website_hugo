@@ -27,12 +27,19 @@ theme = 'vitals'
     [Params.FeaturedEvent]
     name = 'Featured event'
     details = "Whether you are a current student looking to maximize your benefits, a veteran considering a degree, still actively serving and making plans for your transition, or a military family member looking to upskill — this event will provide you with valuable insight. We’ll walk you through developing goals, creating an action plan, and making decisions to get the most out of the benefits you’ve earned through your service."
+    talkingpoints = [
+        "TP one",
+        "Another talking point"
+    ]
+
     [[Params.FeaturedEvent.speakers]]
     name = 'Brian'
     role = 'Speaker role'
     description = 'Lorem ipsum etc'
+    image = '/img/brian.jpg'
     [[Params.FeaturedEvent.speakers]]
     name = 'Karen'
     role = 'Lady speaker'
     description = 'Nisi consequat'
+    image = '/img/karen.jpg'
 

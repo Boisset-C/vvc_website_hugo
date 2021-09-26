@@ -8,5 +8,11 @@
             {{ partial "speaker-card.html" . }}
             {{ end }}
         </div>
+        <h4>Talking points</h4>
+        <ul>
+            {{range .Site.Params.FeaturedEvent.talkingpoints }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
     </div>
 </section>

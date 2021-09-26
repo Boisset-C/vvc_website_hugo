@@ -1,8 +1,19 @@
-<div class="menu wide py-1 bg-blue-200">
-    <ul class="menu-list">
-        <li><a href="{{ .Site.Home.RelPermalink }}">Home</a></li>
-        {{ range .Site.RegularPages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
-</div>
+<!-- Navbar Sticky-->
+<header class="nav-holder make-sticky">
+    <div class="navbar navbar-light bg-white navbar-expand-lg py-0" id="navbar">
+        <div class="container py-3 py-lg-0 px-lg-0">
+            <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img class="d-none d-md-inline-block" src="/img/logo.png" alt="Universal logo"><img class="d-inline-block d-md-none" src="/img/logo-small.png" alt="Universal logo"><span class="sr-only">Universal - go to homepage</span></a>
+            <!-- Navbar toggler-->
+            <button class="navbar-toggler text-primary border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navigationCollapse" aria-controls="navigationCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="sr-only">Toggle navigation</span><i class="fas fa-align-justify"></i></button>
+            <!-- Collapsed Navigation -->
+            <div id="navigationCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="{{ .Site.Home.RelPermalink }}">Home</a></li>
+                    {{range .Site.RegularPages }}
+                    <li class="nav-item"><a class="nav-link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const states = document.getElementById("state");
 
     let countriesRequest = new XMLHttpRequest();
-    countriesRequest.open("GET", "js/countries.json");
+    countriesRequest.open("GET", "/universal/js/countries.json");
     countriesRequest.onload = function () {
         let requestData = JSON.parse(countriesRequest.responseText);
         renderCountries(requestData);
@@ -147,21 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =====================================================
         NAVBAR BEHAVIOR
     ===================================================== */
-    function navBarBehavior() {
-        const topBar = document.getElementById("topBar"),
-            topBarHeight = topBar.offsetHeight,
-            header = document.querySelector(".make-sticky"),
-            headerHeight = header.offsetHeight,
-            scroll = window.pageYOffset;
-
-        if (scroll >= topBarHeight) {
-            header.classList.add("is-fixed", "shadow-sm");
-            document.body.style.paddingTop = `${headerHeight}px`;
-        } else {
-            header.classList.remove("is-fixed", "shadow-sm");
-            document.body.style.paddingTop = "0";
-        }
-    }
 
     window.addEventListener("scroll", function () {
         navBarBehavior();
@@ -170,38 +155,5 @@ document.addEventListener("DOMContentLoaded", function () {
         navBarBehavior();
     });
 
-    /* ==============================================
-        MULTILEVEL DROPDOWNS
-    ============================================== */
-    let dropdownElementList = [].slice.call(document.querySelectorAll(".dropdown-toggle"));
-    let dropdownSubmenuElementList = [].slice.call(document.querySelectorAll(".dropdown-submenu-toggle"));
-    let dropdownMenus = [].slice.call(document.querySelectorAll(".dropdown-menu"));
 
-    let dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-        return new bootstrap.Dropdown(dropdownToggleEl);
-    });
-
-    let submenuList = dropdownSubmenuElementList.map(function (e) {
-        e.onclick = function (e) {
-            e.target.parentNode.querySelector("ul").classList.toggle("show");
-            e.stopPropagation();
-            e.preventDefault();
-        };
-    });
-    function closeAllSubmenus() {
-        let dropdownSubmenus = [].slice.call(document.querySelectorAll(".dropdown-submenu"));
-        dropdownSubmenus.map(function (submenu) {
-            submenu.classList.remove("show");
-        });
-    }
-
-    //I'm using "click" but it works with any event
-    document.addEventListener("click", function (event) {
-        var specifiedElement = document.querySelector(".dropdown");
-        var isClickInside = specifiedElement.contains(event.target);
-
-        if (!isClickInside) {
-            closeAllSubmenus();
-        }
-    });
 });
