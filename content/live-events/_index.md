@@ -5,5 +5,6 @@ featuredevent: "first-ever-event"
 upcomingevents:
     - "our-second-event"
     - "last-event"
+
 ---
 
