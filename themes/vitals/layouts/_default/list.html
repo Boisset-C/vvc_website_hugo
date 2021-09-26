@@ -1,5 +1,11 @@
 {{ define "main" }}
-<div class="py-5">
-{{.Content}}
+<div class="py-5 bg-blue-200">
+    <h1 class="text-center">{{ .Title }}</h1>
 </div>
+{{ range .Pages }}
+<div class="py-3 page text-center">
+    <h3>{{ .Title }}</h3>
+    <p>Page stuff</p>
+</div>
+{{ end }}
 {{ end }}
