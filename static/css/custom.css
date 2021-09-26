@@ -1,21 +1,11 @@
-.hero {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 25%;
-    z-index: -1;
+.hero-content {
+    height: 75vh;
+    padding-top: 25vh;
 }
 
-.hero-content {
+.menu {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    width: 50%;
-    margin: auto;
+    z-index: 2;
 }
 
 .menu a {
