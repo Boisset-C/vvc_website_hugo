@@ -6,4 +6,4 @@ draft: false
 
 # VVC Website Template
 
-Get your VVC on!
+Get your **VVC** on!
