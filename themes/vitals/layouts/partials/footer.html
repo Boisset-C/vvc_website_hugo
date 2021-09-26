@@ -1,13 +1,18 @@
-<footer class="py-5 bg-gray-200">
-    <h3>Special thanks to our partners</h3>
-    <div class="container py-4">
-        <div class="swiper-container customers-slider">
-            <div class="swiper-wrapper">
-                {{ range .Site.Params.Partners }}
-                <div class="swiper-slide h-auto"><img class="img-fluid d-block mx-auto" src="{{ .image }}" alt="{{ .name }}" width="140"></div>
-                {{ end }}
+<footer>
+    <div class="py-4 bg-gray-200 text-center">
+        <h3>Special thanks to our partners</h3>
+        <div class="container py-4">
+            <div class="swiper-container customers-slider">
+                <div class="swiper-wrapper">
+                    {{ range .Site.Params.Partners }}
+                    <div class="swiper-slide h-auto"><img class="img-fluid d-block mx-auto" src="{{ .image }}" alt="{{ .name }}" width="140"></div>
+                    {{ end }}
+                </div>
             </div>
         </div>
+    </div>
+    <div class="text-center py-3 bg-blue-200">
+        <h6>{{ .Site.Params.copyright }}</h6>
     </div>
 </footer>
 {{ partial "latescripts.html" . }}

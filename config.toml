@@ -4,6 +4,8 @@ title = 'VVC Website'
 theme = 'vitals'
 
 [Params]
+    copyright = 'Copyright (c) 2021. All rights reserved.'
+
     [Params.Hero]
     header = '[Name of University]'
     subheader = 'Veterans Live'
@@ -17,3 +19,4 @@ theme = 'vitals'
     [[Params.Partners]]
     name = 'Vets In Tech'
     image = '/img/VetsInTech-logo 3.png'
+
