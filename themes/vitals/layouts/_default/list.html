@@ -1,11 +1,8 @@
 {{ define "main" }}
-<div class="py-5 bg-blue-200">
-    <h1 class="text-center">{{ .Title }}</h1>
-</div>
+{{ partial "title-header.html" . }}
 {{ range .Pages }}
 <div class="py-3 page text-center">
-    <h3>{{ .Title }}</h3>
-    <p>Page stuff</p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 </div>
 {{ end }}
 {{ end }}
