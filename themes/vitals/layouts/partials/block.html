@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row gy-4 align-items-center">
             <div class="col-md-6 text-center">
-                <h2 class="text-uppercase">Everything you need</h2>
-                <p class="lead mb-3">40+ prepared HTML templates</p>
-                <p class="mb-3">We have prepared literally <strong>everything you would possibly need building corporate, e-commerce or portfolio website. If you still miss something, let us know and we will try to include it in theme's future updates.</strong></p>
-                <p><a class="btn btn-primary" href="#">Read more</a></p>
+                {{ with .Site.Params.Grabber }}
+                <h2 class="text-uppercase">{{ .header }}</h2>
+                <p class="lead mb-3">{{ .details }}</p>
+                {{ end }}
             </div>
             <div class="col-md-6"><img class="img-fluid d-block mx-auto" src="img/block1.jpg" alt="..."></div>
         </div>

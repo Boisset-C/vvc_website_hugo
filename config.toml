@@ -13,6 +13,10 @@ theme = 'vitals'
     button_text = 'Register now'
     background_img = '/img/hero-background.jpg'
 
+    [Params.Grabber]
+    header = 'Join us on the live stream, or watch the recorded talks later'
+    details = 'In partnership with Virtual Veterans Communities, [UNIVERSITY NAME] presents a live interview event series, hosted by veterans and military students, all about pursuing higher education.'
+
     [[Params.Partners]]
     name = 'Virtual Veterans Communities'
     image = '/img/VVTC-logo 3.png'
