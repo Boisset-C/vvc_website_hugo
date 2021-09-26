@@ -23,6 +23,12 @@ theme = 'vitals'
     [[Params.Partners]]
     name = 'Vets In Tech'
     image = '/img/VetsInTech-logo 3.png'
+    [[Params.Partners]]
+    name = 'Veterans Affairs'
+    image = '/img/VA-logo 3.png'
+    [[Params.Partners]]
+    name = 'CalVet'
+    image = '/img/CalVet_Color_notext 3.png'
 
     [Params.FeaturedEvent]
     name = 'Featured event'

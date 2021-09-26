@@ -144,16 +144,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    /* =====================================================
-        NAVBAR BEHAVIOR
-    ===================================================== */
-
-    window.addEventListener("scroll", function () {
-        navBarBehavior();
-    });
-    window.addEventListener("resize", function () {
-        navBarBehavior();
-    });
-
-
 });
