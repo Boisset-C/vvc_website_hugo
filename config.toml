@@ -48,4 +48,9 @@ theme = 'vitals'
     role = 'Lady speaker'
     description = 'Nisi consequat'
     image = '/img/karen.jpg'
+    [[Params.FeaturedEvent.speakers]]
+    name = 'Guy'
+    role = 'Other speaker'
+    description = 'More stuff about stuff'
+    image = '/img/guy.jpg'
 
