@@ -4,10 +4,16 @@ title = 'VVC Website'
 theme = 'vitals'
 
 [Params]
-
     [Params.Hero]
     header = '[Name of University]'
     subheader = 'Veterans Live'
     description = 'Setting the stage for success through conversation.'
     button_text = 'Register now'
-    background_img = 'img/hero-background.jpg'
+    background_img = '/img/hero-background.jpg'
+
+    [[Params.Partners]]
+    name = 'Virtual Veterans Communities'
+    image = '/img/VVTC-logo 3.png'
+    [[Params.Partners]]
+    name = 'Vets In Tech'
+    image = '/img/VetsInTech-logo 3.png'
