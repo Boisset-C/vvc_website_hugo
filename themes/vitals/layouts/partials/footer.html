@@ -4,7 +4,7 @@
             <h3 class="text-center">Special thanks to our partners</h3>
             <div class="container py-4">
                 <div class="swiper-container partners-slider">
-                    <div class="swiper-wrapper row justify-content-center align-items-center">
+                    <div class="swiper-wrapper">
                         {{ range .Site.Params.Partners }}
                         <div class="swiper-slide h-auto"><img class="img-fluid d-block mx-auto" src="{{ .image }}" alt="{{ .name }}" width="140"></div>
                         {{ end }}
