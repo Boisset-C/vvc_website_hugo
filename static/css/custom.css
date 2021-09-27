@@ -3,16 +3,6 @@
     padding-top: 25vh;
 }
 
-.menu {
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-
-.menu a {
-    color: white;
-}
-
 .bg-blue-200 {
     background: var(--bs-primary) !important;
 }
