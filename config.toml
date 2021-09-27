@@ -44,10 +44,10 @@ theme = 'vitals'
     description = 'Lorem ipsum etc'
     image = '/img/brian.jpg'
     [[Params.FeaturedEvent.speakers]]
-    name = 'Karen'
+    name = 'Jill'
     role = 'Lady speaker'
     description = 'Nisi consequat'
-    image = '/img/karen.jpg'
+    image = '/img/jill.jpg'
     [[Params.FeaturedEvent.speakers]]
     name = 'Guy'
     role = 'Other speaker'

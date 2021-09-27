@@ -1,11 +1,15 @@
-<section id="featured-event py-4">
-    <div class="container align-items-center text-center">
-        <h4 class="text-uppercase">Event Date/Time</h4>
-        <h2>{{ .Site.Params.FeaturedEvent.name }}</h2>
-        <p>{{ .Site.Params.FeaturedEvent.details }}</p>
-        <div class="speakers-list">
+<section id="featured-event">
+    <div class="container py-5 lign-items-center text-center">
+        <div class="row gy-3">
+            <h4 class="text-uppercase">Event Date/Time</h4>
+            <h2>{{ .Site.Params.FeaturedEvent.name }}</h2>
+            <p>{{ .Site.Params.FeaturedEvent.details }}</p>
+        </div>
+        <div class="row g-4">
             {{ range .Site.Params.FeaturedEvent.speakers }}
+            <div class="col lg-3">
             {{ partial "speaker-card.html" . }}
+            </div>
             {{ end }}
         </div>
         <h4>Talking points</h4>
