@@ -7,7 +7,7 @@
         </div>
         <div class="row g-4 py-4">
             {{ range .Site.Params.FeaturedEvent.speakers }}
-            <div class="col lg-3">
+            <div class="col mx-2 lg-3">
             {{ partial "speaker-card.html" . }}
             </div>
             {{ end }}
