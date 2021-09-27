@@ -2,6 +2,7 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'VVC Website'
 theme = 'vitals'
+enableRobotsTXT = true
 
 [Params]
     copyright = 'Copyright (c) 2021. All rights reserved.'
