@@ -4,8 +4,8 @@
     <div class="row justify-content-center gy-3">
         {{ range .Pages }}
         <div class="col-lg-3">
-            <h2>Page</h2>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <img class="img-fluid" src="{{ .Params.image }}">
             <h5>{{ .Date.Year }}</h5>
         </div>
         {{ end }}
